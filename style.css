@@ -7,6 +7,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: hsl(229, 23%, 23%);
+  overflow: hidden;
+}
+p {
+    margin: 0;
 }
 
 .bg-pattern-top {
@@ -37,15 +45,50 @@ body {
     align-items: center;
 }
 
-.profile {
-    position: relative;
-    top: -50px;
+.txt-detail {
+    font-weight: 400;
+    /* color: hsl(0, 0%, 59%); */
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-img {
+    position: absolute;
+    top: 85px;
     border-radius: 50%;
     border: 5px solid white;
+}
+
+.details-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.75rem;
+}
+.details-container > * {
+    margin-bottom: 0.75rem;
+}
+.location {
+    margin-bottom: 1.5rem;
+    font-size: 14px
 }
 
 .stats {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    height: 100%;
+    border-top: 1px solid rgba(150,150,150, 0.25);
+    text-align: center;
+    margin-bottom: 0;
+    padding: 25px;
+}
+
+.stats .txt-detail {
+    font-size: 12px;
+}
+
+.stats > div > p:first-child {
+    margin-bottom: 0.5rem;
 }
