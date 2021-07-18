@@ -1,0 +1,51 @@
+
+/* Canvas + background styles */
+body {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  top: -80%;
+  left: -205%;
+  z-index: -1;
+}
+.bg-pattern-bottom {
+  position: absolute;
+  bottom: -90%;
+  right: -205%;
+  z-index: -1;
+}
+
+/* Card styles */
+
+.profile-card {
+    position: relative;
+    background-color: white;
+    width: 350px;
+    height: 375px;
+    max-width: calc(100% - 50px);
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
