@@ -1,13 +1,16 @@
 /* Canvas + background styles */
 html {
-    max-height: 100vh;
-    overflow: hidden;
+  max-height: 100vh;
+  overflow: hidden;
 }
 body {
   background-color: hsl(185, 75%, 39%);
+  position: fixed;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -22,15 +25,15 @@ p {
 
 .bg-pattern-top {
   position: absolute;
-  top: -80%;
-  left: -205%;
+  bottom: 35%;
+  right: 53%;
   z-index: -1;
   overflow: hidden;
 }
 .bg-pattern-bottom {
   position: absolute;
-  bottom: -90%;
-  right: -205%;
+  left: 50%;
+  top: 48%;
   z-index: -1;
   overflow: hidden;
 }
@@ -52,7 +55,6 @@ p {
 
 .txt-detail {
   font-weight: 400;
-  /* color: hsl(0, 0%, 59%); */
   color: hsl(227, 10%, 46%);
 }
 
@@ -96,17 +98,4 @@ p {
 
 .stats > div > p:first-child {
   margin-bottom: 0.5rem;
-}
-
-@media only screen and (min-width: 1440px) {
-  .bg-pattern-top {
-    top: -50%;
-    left: -13%;
-  }
-  .bg-pattern-bottom {
-    position: absolute;
-    bottom: -50%;
-    right: -15%;
-    z-index: -1;
-  }
 }
